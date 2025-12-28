@@ -1,8 +1,6 @@
 {lib, ...}:
 lib.rigging.mkHost {
-  import = [
-    ./configuration.nix
-  ];
+  build = ./configuration.nix;
 
   rigging = {
     system = "x86_64-linux";

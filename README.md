@@ -1,6 +1,5 @@
 ## Architecture
 
-- Uses the [adios module system](https://adisbladis.github.io/adios/motivation.html).
 - Host configs declare contracts on their required secrets and configurations
 - The deployment context provides those requirements with actual values
 
@@ -47,3 +46,9 @@ Have a look at the [/examples] directory to see what my ideal config looks like.
 - [ ] Evaluation and deployment steps are different
 
 I'd call it a Nix/NixOS-meta-framework. The all-in-one solution for all my Nix woes.
+
+## Developing
+- Clone the repo
+- Run `nix develop` to enter a dev shell that is pre-configured to work on the repo
+- Run `watchexec -c -d 500 nix flake check -L` in order to automatically run all tests upon file changes
+- Run `nix flake check` to run all the automated tests that test the library

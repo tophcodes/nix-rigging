@@ -4,10 +4,10 @@
     openFirewall = true;
 
     # this will throw a build error unless overridden:
-    pass = config.rigging.options.croc.pass.text;
+    pass = config.rigging.secrets.croc.pass.text;
 
     # ideal usage:
-    # pass = config.rigging.options.croc.pass.path;
+    # pass = config.rigging.secrets.croc.pass.path;
   };
 
   services.ssh = {

@@ -1,3 +1,3 @@
 {...}: {
-  cross.pass.secretPath = ./croc-pass.age;
+  croc.pass.path = ./croc-pass.age;
 }
